@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import QueryBasics from './features/queries/QueryBasics';
 import DependentQueries from './features/dependent-queries/DependentQueries';
+import PaginatedQueries from './features/paginated-queries/PaginatedQueries';
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,9 @@ function App() {
               <li>
                 <Link to="/dependent-queries">Dependent Queries</Link>
               </li>
+              <li>
+                <Link to="/paginated-queries">Paginated Queries</Link>
+              </li>
             </ul>
           </nav>
 
@@ -33,6 +37,9 @@ function App() {
             </Route>
             <Route path="/dependent-queries">
               <DependentQueries />
+            </Route>
+            <Route path="/paginated-queries">
+              <PaginatedQueries />
             </Route>
             <Route path="/">
               <Home />

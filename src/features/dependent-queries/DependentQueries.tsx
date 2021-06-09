@@ -1,3 +1,5 @@
+// https://react-query.tanstack.com/guides/dependent-queries
+
 import React from 'react';
 import { useQuery } from 'react-query';
 import axios from 'axios';
